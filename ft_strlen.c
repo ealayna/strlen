@@ -2,7 +2,7 @@
 
 char *lenline(char *s, size_t i)
 {
-    if (i == 16 && (s + i) && *(s + i))
+    if (i == 512 && (s + i) && *(s + i))
        return(lenline(s + i, i));
     if (!(s + i) || !*(s + i))
        return(lenline(s, i >> 1));
