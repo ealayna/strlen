@@ -24,7 +24,6 @@ size_t ft_lenline(char *s, char *c)
             else
             {
                 k -= i / 2 * 3;
-                printf("%i\n", k);
                 if (s[k] == '\0')
                     return(k);
                     return(++k + ft_lenline(s + k, c));
